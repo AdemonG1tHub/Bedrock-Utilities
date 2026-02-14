@@ -25,14 +25,6 @@
     {
       "module_name": "@minecraft/server-ui",
       "version": "beta"
-    },
-    {
-      "module_name": "@minecraft/vanilla-data",
-      "version": "beta"
-    },
-    {
-      "module_name": "@minecraft/math",
-      "version": "beta"
     }
   ]
 }
