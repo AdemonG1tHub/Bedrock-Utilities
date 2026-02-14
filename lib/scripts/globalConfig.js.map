@@ -1,0 +1,1 @@
+{"version":3,"file":"globalConfig.js","sourceRoot":"","sources":["../../scripts/globalConfig.ts"],"names":[],"mappings":"AACA,MAAM,CAAC,MAAM,uBAAuB,GAAG;IACrC,IAAI,EAAE;QACJ,KAAK,EAAE,OAAO;KACf;IACD,KAAK,EAAE;QACL;YACE,IAAI,EAAE,OAAO;YACb,CAAC,EAAE,CAAC;YACJ,CAAC,EAAE,EAAE;YACL,CAAC,EAAE,CAAC;SACL;KACF;CACF,CAAC"}

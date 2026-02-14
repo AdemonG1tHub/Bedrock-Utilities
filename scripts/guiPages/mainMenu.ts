@@ -1,6 +1,8 @@
 import { system, world, Player } from "@minecraft/server";
 import { BEDROCKUTILITIES_CONFIG } from "../globalConfig";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
+import { staffMenu } from "../staff/staffGUI";
+import { warpsMenu } from "./warps";
 
 export function mainMenu(player: Player) {
   const menu = new ActionFormData()
@@ -16,7 +18,7 @@ export function mainMenu(player: Player) {
     }
     menu.show(player).then(response => {
       if (response.selection === 0) {
-        player.runCommand("warp menu")
+        warpsMenu(player);
       } else if (response.selection === 1) {
         player.runCommand("shop menu")
       } else if (response.selection === 2) {
@@ -26,7 +28,7 @@ export function mainMenu(player: Player) {
       } else if (response.selection === 4) {
         player.runCommand("help menu")
       } else if (response.selection === 5 && player.hasTag(BEDROCKUTILITIES_CONFIG.TAGS.ADMIN)) {
-        player.runCommand("staff menu")
+        staffMenu(player);
       }
     })
 }
