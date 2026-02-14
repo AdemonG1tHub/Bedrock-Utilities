@@ -1,4 +1,4 @@
-import { world, Player } from "@minecraft/server";
+import { world, Player, system } from "@minecraft/server";
 import { mainMenu } from "../../guiPages/mainMenu";
 
 world.beforeEvents.itemUse.subscribe((eventData) => {
@@ -6,6 +6,8 @@ world.beforeEvents.itemUse.subscribe((eventData) => {
   const item = eventData.itemStack;
 
   if (item.typeId === "minecraft:compass") {
-    mainMenu(player);
+    system.run(() => {
+      mainMenu(player);
+    });
   }
 });
