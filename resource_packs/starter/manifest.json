@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Bedrock Utilities 1.0.0 [RP]",
+    "description": "Made with love by AdemDEV!",
+    "uuid": "71176075-857f-4507-ad0b-aa7ad38480b3",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 26, 0]
+  },
+  "modules": [
+    {
+      "description": "Bedrock Utilities 1.0.0 [RP]",
+      "type": "resources",
+      "uuid": "119cd140-2a9e-49e7-847c-fb421e00a01d",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "5fa3fcb1-d3e7-41bc-a21e-556e3b8117d0",
+      "version": [1, 0, 0]
+    }
+  ]
+}
